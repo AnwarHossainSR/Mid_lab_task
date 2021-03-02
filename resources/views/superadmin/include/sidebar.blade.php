@@ -31,6 +31,60 @@
                 </p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('SalesController.physicalStore') }}" class="nav-link">
+                <i class="nav-icon text-primary fas fa-th"></i>
+                <p>
+                    Physical Store
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('SalesController.ecommerceLog') }}" class="nav-link">
+                <i class="nav-icon text-primary fas fa-th"></i>
+                <p>
+                    E-commerce Store
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('SalesController.mediaLog') }}" class="nav-link">
+                <i class="nav-icon text-primary fas fa-th"></i>
+                <p>
+                    Social Media STore
+                </p>
+                </a>
+            </li>
+            <li class="nav-item has-treeview {{-- menu-open --}}">
+                <a href="#" class="nav-link ">
+    
+                <i class="nav-icon text-primary fab fa-affiliatetheme"></i>
+                    <p>
+                        Export Data
+                        <i class="right fas fa-angle-left"></i>
+                    </p>
+                </a>
+                <ul class="nav nav-treeview">
+                    <li class="nav-item">
+                        <a href="{{ route('Sales.sold.log') }}" class="nav-link {{-- active --}}">
+                        <i class="far fa-circle nav-icon text-primary"></i>
+                        <p>All Item Export</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('Sales.sold.download') }}" class="nav-link {{-- active --}}">
+                        <i class="far fa-circle nav-icon text-primary"></i>
+                        <p>Sold Item Export</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ route('Sales.pdf.pending.download') }}" class="nav-link {{-- active --}}">
+                        <i class="far fa-circle nav-icon text-primary"></i>
+                        <p>Unsold Item Export</p>
+                        </a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->
