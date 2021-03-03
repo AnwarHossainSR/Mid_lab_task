@@ -47,11 +47,14 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/physical_store/pending_log', [SalesController::class, 'loggs'])->name('Sales.pending.log');
         Route::get('/physical_store/pdfdownload', [SalesController::class, 'download'])->name('Sales.pdf.download');
         Route::get('/physical_store/sold/pdfdownload', [SalesController::class, 'downloadSoldProduct'])->name('Sales.sold.download');
-
         Route::get('/physical_store/pending/pdfdownload', [SalesController::class, 'downloadPendingProduct'])->name('Sales.pdf.pending.download');
+    });
+
+    Route::group(['prefix' => 'system/product_management'], function () {
+
+        Route::get('/physical_store', [SalesController::class,'physicalStore'])->name('SalesController.physicalStore');
+        
     });
 
 });
 
-
-//Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

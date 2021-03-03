@@ -47,11 +47,20 @@
                 </p>
                 </a>
             </li>
+            
             <li class="nav-item">
                 <a href="{{ route('SalesController.mediaLog') }}" class="nav-link">
                 <i class="nav-icon text-primary fas fa-th"></i>
                 <p>
                     Social Media STore
+                </p>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="{{ route('SalesController.ecommerceLog') }}" class="nav-link">
+                <i class="nav-icon text-primary fas fa-th"></i>
+                <p>
+                    Product Module
                 </p>
                 </a>
             </li>
